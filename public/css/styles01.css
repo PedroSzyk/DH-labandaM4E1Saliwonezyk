@@ -1,0 +1,371 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+/*header*/
+
+header{
+    background-color:#EAC926;
+}
+
+.logo-search{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    margin: 15px;
+    width: 30%;
+    height: 30%;
+    flex: 1 1 auto;
+}
+
+.search{
+    display: block;
+    flex: 40%;
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.header-parrafo{
+    margin-top: 10px;
+    text-align: center;
+    flex: 5 1 100%;
+}
+
+.navbar{
+    display: none
+}
+
+
+.burger{
+    color:white;
+    width: 100%;
+    text-align: center;
+}
+
+.burger-menu{
+    background-color: #0343A9;
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.banner {
+    margin-top: 15px;
+    position: relative;
+    top: 5px;
+}
+
+/*main*/
+
+main{
+    margin: 5vw;
+    width: 90%;
+    background-color: #ebebeb;
+    align-content: right;
+}
+
+.visita{
+    margin-top: 20px;
+}
+
+.titulares{
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.caja-productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto{
+    margin: 15px;
+    padding-bottom: 10px;
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: column;
+    transition: all 400ms ease-in;
+}
+
+.camion-precio-descripcion{
+    padding: 10px 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-top: solid 1px #ebebeb;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.camion{
+    color: #39b54a;
+}
+
+.camion i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.precio-descripcion{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.precio {
+    font-size: 18px;
+    margin: 0px;
+    padding: 3px 5px;
+    flex: 30%;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    margin: 0px;
+    padding: 3px 5px;
+    text-align: left;
+    flex: 60%;
+}
+
+.descripcion{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    flex: 100%;
+    display: none;
+    transition: all 4s ease-in-out;
+}
+
+/*Register & Login*/
+
+.register-title,
+.login-title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+    
+}
+
+.register-form,
+.login-form{
+    text-align: center;
+    border-radius: 30px;
+}
+
+.nombre-apellido,
+.nombre-usuario,
+.domicilio,
+.mail,
+.contraseña,
+.fecha-nacimiento,
+.login-username,
+.login-password{
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 5px 20px;
+}
+
+.box-form{
+    padding: 10px;
+}
+
+form h3{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.choice input{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.box-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.register-button,
+.login-button{
+    margin: 15px 10px auto 10px;
+    border-radius: 10px;
+    padding: 3px;
+    border: 1px solid #666;
+    color: #0022AA;
+    background-color: #FFFFFF;
+}
+
+.login-button{
+    transition: all 1s ease;
+}
+
+.login-button:hover{
+    color:#FFFFFF;
+    background-color: #0022AA;
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.icono{
+    color:#0D5ACA;
+    margin-bottom: 15px;
+    padding-top: 40px;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    transition: all 100ms;
+}
+
+.texto-footer{
+    color: #666;
+}
+
+.titular-footer{
+    margin-bottom: 0px;
+}
+
+.parrafo-footer{
+    margin-top: 0px;
+}
+
+.footer-bottom{
+    margin-top: 30px;
+}
+
+h5{
+    background-color: #FFFFFF;
+    color: #666;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-weight: 200;
+}
+
+/*Hover*/
+
+.producto:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.precio-descripcion:hover .descripcion{
+    display: block;
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 361px){
+    .navbar{
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0px;
+
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .logo-search{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .logo,
+    .search,
+    .header-parrafo{
+        flex: 1 1 auto;
+        max-width: 30%;
+    }
+
+    .navbar01,
+    .navbar02{
+        margin-right: 20px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .navbar01 a,
+    .navbar02 a{
+        text-decoration: none;
+        color: black;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .caja-productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .producto{
+        width: 40%;
+    }
+}
+
+/*--Monitor--*/
+
+@media (min-width: 769px){
+
+    *{
+        font-size: 1rem;
+    }
+
+    .producto{
+        width: 20%;
+    }
+
+    .footer-top{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .icono:hover {
+        color: #39b54a;
+    }
+}
